@@ -1,0 +1,15 @@
+menuconfig LIBLORA
+    bool "Semtech lora library"
+    default n
+    ---help---
+        Enable build for Semtech lora functions
+
+if LIBLORA
+
+config LIBLIBLORA_DEBUG
+	bool "Liblora debugging"
+	default n
+	---help---
+		Enable debugging for liblora
+
+endif # LIBLORA
